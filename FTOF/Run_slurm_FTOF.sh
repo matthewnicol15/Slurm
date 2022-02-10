@@ -1,10 +1,10 @@
 #!/bin/bash
 
-for NUMBER in `seq 10 69`;
+for NUMBER in `seq 5032 5419`;
 
 do
 
-sbatch slurm_d_pip_pim_PID$NUMBER.sh
+sbatch slurm_FTOF_$NUMBER.sh
 
 sleep 30
 
