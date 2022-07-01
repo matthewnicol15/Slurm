@@ -1,13 +1,13 @@
 #!/bin/bash
-ScriptDir="/home/matthewn/Documents/Macros/Slurm/FTOF/RGA_Fall18_Outbending"
+ScriptDir="/home/matthewn/Documents/Macros/Slurm/FTOF/RGF_Summer20_Inbending"
 cd $ScriptDir
 
-for NUMBER in `seq 5422 5666`;
+for NUMBER in `seq $1 $2`;
 
 do
 
 sbatch slurm_FTOF_$NUMBER.sh
 
-sleep 15
+sleep 4
 
 done
